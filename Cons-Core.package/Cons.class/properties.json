@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "EvanDonahue 12/11/2017 17:54",
+	"super" : "Object",
+	"category" : "Cons-Core",
+	"classinstvars" : [
+		"empty"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "Cons",
+	"type" : "normal"
+}

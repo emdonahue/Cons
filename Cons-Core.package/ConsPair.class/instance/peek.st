@@ -1,0 +1,3 @@
+streaming
+peek
+	^ car

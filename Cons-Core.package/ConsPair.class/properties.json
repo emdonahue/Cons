@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Cons",
+	"category" : "Cons-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"car",
+		"cdr"
+	],
+	"name" : "ConsPair",
+	"type" : "normal"
+}

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "ConsTransducer",
+	"category" : "Cons-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"tail"
+	],
+	"name" : "ConsAppend",
+	"type" : "normal"
+}

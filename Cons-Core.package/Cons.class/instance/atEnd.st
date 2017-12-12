@@ -1,0 +1,3 @@
+syncing
+atEnd
+	^ false

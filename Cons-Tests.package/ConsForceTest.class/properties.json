@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ConsTest",
+	"category" : "Cons-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ConsForceTest",
+	"type" : "normal"
+}

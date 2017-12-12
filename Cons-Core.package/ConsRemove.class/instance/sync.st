@@ -1,0 +1,8 @@
+subclassresponsibility
+sync
+	transducer := transducer
+	ifEmpty: [ ^ transducer := self class empty ]
+		ifNotEmpty: [ :t | 
+			(block value: t peek)
+				ifTrue: [ ^ t next ]
+				ifFalse: t ]

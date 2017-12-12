@@ -1,0 +1,3 @@
+*Cons-Core
+isCons
+	^ false

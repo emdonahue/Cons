@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ConsTransducer",
+	"category" : "Cons-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ConsForce",
+	"type" : "normal"
+}

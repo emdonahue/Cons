@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "Cons",
+	"category" : "Cons-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ConsEmpty",
+	"type" : "normal"
+}

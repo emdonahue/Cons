@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "EvanDonahue 12/11/2017 17:28",
+	"super" : "Cons",
+	"category" : "Cons-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"transducer"
+	],
+	"name" : "ConsTransducer",
+	"type" : "normal"
+}

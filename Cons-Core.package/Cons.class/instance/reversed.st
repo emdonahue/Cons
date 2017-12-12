@@ -1,0 +1,3 @@
+lazy
+reversed
+	^ self reverse

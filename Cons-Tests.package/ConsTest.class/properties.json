@@ -1,0 +1,24 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Cons-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"four",
+		"three",
+		"odds",
+		"two",
+		"fourCopy",
+		"evens",
+		"threeFour",
+		"one",
+		"assoc",
+		"zero",
+		"pair",
+		"improper"
+	],
+	"name" : "ConsTest",
+	"type" : "normal"
+}

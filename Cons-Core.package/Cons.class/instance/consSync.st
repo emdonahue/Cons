@@ -1,0 +1,3 @@
+syncing
+consSync
+	^ self sync

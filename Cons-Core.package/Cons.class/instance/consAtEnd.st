@@ -1,0 +1,3 @@
+syncing
+consAtEnd
+	^ self atEnd
