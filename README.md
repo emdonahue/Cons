@@ -24,5 +24,5 @@ Cons with: 1 with: 2.  "(1 2)"
 ```
 #(1 2 3) asCons.                "(1 2 3)"
 #(1 2 3) readStream asCons.     "(...)"
-x := 1. [ x := x + 1 ] asCons.  "(...)"
+x := 0. [ x := x + 1 ] asCons.  "(...)"
 ```
