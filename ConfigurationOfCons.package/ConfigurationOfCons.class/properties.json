@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ConfigurationOf",
+	"category" : "ConfigurationOfCons",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ConfigurationOfCons",
+	"type" : "normal"
+}
