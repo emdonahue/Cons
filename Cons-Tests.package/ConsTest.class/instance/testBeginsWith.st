@@ -2,7 +2,7 @@ tests-eager
 testBeginsWith
 	self assert: (zero beginsWith: zero).
 	self assert: (one beginsWith: one).
-	self assert: (four beginsWith: four).
+	self assert: (four beginsWith: fourCopy).
 	self reset.
 	self assert: (four beginsWith: two).
 	self reset.

@@ -1,3 +1,3 @@
 *Cons-Core
 asCons
-	^ Cons fromBlock: self
+	^ Cons repeat: self

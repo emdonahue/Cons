@@ -1,3 +1,3 @@
 generating
 repeat: aValuable
-	^ ConsGenerator new valuable: aValuable 
+	^ self generate: aValuable until: false

@@ -1,3 +1,4 @@
 streaming
 peek
-	^ valuable value
+
+	^ peek

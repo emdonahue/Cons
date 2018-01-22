@@ -1,16 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "Cons",
-	"category" : "Cons-Core",
+	"super" : "ConsTest",
+	"category" : "Cons-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"valuable",
-		"atEnd",
-		"peek",
-		"synced"
+		"generating"
 	],
-	"name" : "ConsGenerator",
+	"name" : "ConsGeneratorTest",
 	"type" : "normal"
 }
