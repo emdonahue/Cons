@@ -1,3 +1,8 @@
 streaming
 sync
-	synced ifFalse: [ synced := true. self step ]
+	synced
+		ifTrue: [ ^ self ].
+	atEnd value
+		ifTrue: [ ^ Cons empty ].
+	peek := valuable value.
+	synced := true

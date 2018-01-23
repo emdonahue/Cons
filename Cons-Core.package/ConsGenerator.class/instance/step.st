@@ -1,3 +1,4 @@
 streaming
 step
-	peek := valuable value
+
+	synced := false
