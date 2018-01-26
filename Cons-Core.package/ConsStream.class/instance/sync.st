@@ -1,3 +1,3 @@
 streaming
 sync
-	stream atEnd ifTrue: [ ^ Cons empty ]
+	stream atEnd ifTrue: [ ^ self class empty ]

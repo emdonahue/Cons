@@ -1,3 +1,3 @@
 syncing
 consAtEnd
-	^ false
+	^ true

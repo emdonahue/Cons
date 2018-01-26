@@ -3,6 +3,6 @@ sync
 	synced
 		ifTrue: [ ^ self ].
 	atEnd value
-		ifTrue: [ ^ Cons empty ].
+		ifTrue: [ ^ self class empty ].
 	peek := valuable value.
 	synced := true

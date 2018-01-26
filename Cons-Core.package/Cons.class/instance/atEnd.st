@@ -1,3 +1,0 @@
-syncing
-atEnd
-	^ false

@@ -1,0 +1,3 @@
+accessing
+allButFirst
+	^ self cdr

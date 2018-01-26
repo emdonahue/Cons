@@ -4,6 +4,6 @@ ifEmpty: emptyBlock ifNotEmpty: notEmptyBlock
 
 	| cons |
 	cons := self asReducer.
-	cons atEnd
+	cons consAtEnd
 		ifTrue: [ ^ emptyBlock value ].
 	^ notEmptyBlock cull: cons

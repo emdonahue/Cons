@@ -1,3 +1,3 @@
 lazy
-remove: aBlock
-	^ ConsRemove new transducer: self; block: aBlock
+remove: anElement
+	^ self rejectOne: [ :x | x = anElement ]
