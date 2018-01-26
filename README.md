@@ -32,3 +32,13 @@ Although Cons avoids building intermediate lists when possible, it does, by defa
 ```
 myStream asCons unsafe do: [...].
 ```
+
+### Installation
+Use World Menu > Tools > Catalog Browser and search for "Cons," or use the following Metacello script:
+```
+Metacello new
+smalltalkhubUser: 'Pharo' project: 'MetaRepoForPharo60'; 
+configuration: 'Cons';
+version: #stable;
+load.
+```
