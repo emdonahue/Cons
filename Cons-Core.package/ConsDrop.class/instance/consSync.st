@@ -1,5 +1,5 @@
 accessing
-sync
+consSync
 	transducer
 		linksDo: [ :d | 
 			0 < number

@@ -1,5 +1,5 @@
 subclassresponsibility
-sync
+consSync
 	transducer := transducer
 	ifEmpty: [ ^ transducer := self class empty ]
 		ifNotEmpty: [ :t | 

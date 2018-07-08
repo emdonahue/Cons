@@ -1,5 +1,5 @@
 streaming
-sync
+consSync
 	synced ifTrue: [ ^ self ].
 	synced := true.
 	transducer

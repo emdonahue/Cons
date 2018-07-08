@@ -1,5 +1,5 @@
 streaming
-sync
+consSync
 	| tail |
 	reversed
 		ifTrue: [ ^ transducer ].

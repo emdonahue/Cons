@@ -1,3 +1,3 @@
 syncing
 asReducer
-	^ self sync copyReducer
+	^ self consSync copyReducer

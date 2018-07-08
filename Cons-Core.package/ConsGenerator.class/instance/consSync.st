@@ -1,5 +1,5 @@
 streaming
-sync
+consSync
 	synced
 		ifTrue: [ ^ self ].
 	atEnd value

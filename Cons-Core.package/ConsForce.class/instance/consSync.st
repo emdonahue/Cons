@@ -1,3 +1,3 @@
 subclassresponsibility
-sync
+consSync
 	^ transducer := transducer consForce

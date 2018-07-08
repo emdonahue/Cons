@@ -1,3 +1,3 @@
 streaming
 step
-	^ cdr := cdr consForce
+	^ cdr := cdr consForce.

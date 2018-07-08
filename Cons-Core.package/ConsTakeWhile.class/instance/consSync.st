@@ -1,5 +1,5 @@
 streaming
-sync
+consSync
 	^ transducer
 		ifNotEmpty: [ :t | 
 			transducer := t.

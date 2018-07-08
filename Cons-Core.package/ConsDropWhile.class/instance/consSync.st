@@ -1,8 +1,7 @@
-streaming
-sync
+accessing
+consSync
 	transducer
 		do: [ :a :d | 
 			(block value: a)
-				ifTrue: [ transducer := d.
-					^ self ] ].
+				ifFalse: [ ^ transducer := d ] ].
 	^ transducer := self class empty
