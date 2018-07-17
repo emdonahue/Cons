@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "ConsTest",
+	"super" : "Object",
 	"category" : "Cons-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
