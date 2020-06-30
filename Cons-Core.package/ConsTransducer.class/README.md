@@ -1,1 +1,1 @@
-A lazy list computation. Subclasses will likely need to override at least sync, and possilby step or peek.
+A lazy list computation. Subclasses will likely need to override at least consSync, and possilby step or peek.

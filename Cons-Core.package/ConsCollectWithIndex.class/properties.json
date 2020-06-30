@@ -1,13 +1,14 @@
 {
-	"commentStamp" : "EvanDonahue 6/30/2020 01:02",
-	"super" : "Cons",
+	"commentStamp" : "",
+	"super" : "ConsTransducer",
 	"category" : "Cons-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"transducer"
+		"block",
+		"index"
 	],
-	"name" : "ConsTransducer",
+	"name" : "ConsCollectWithIndex",
 	"type" : "normal"
 }
