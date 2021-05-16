@@ -1,5 +1,3 @@
 lazy
 rejectOne: aBlock
-	^ ConsRemove new
-		transducer: self;
-		block: aBlock
+	^ self rejectOne: aBlock ifAbsent: self.

@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"block"
+		"block",
+		"absentBlock"
 	],
 	"name" : "ConsRemove",
 	"type" : "normal"
