@@ -1,3 +1,3 @@
-converting
+laziness
 force
 	^ self consForce force

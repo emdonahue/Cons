@@ -1,4 +1,4 @@
 testing
 isEmpty
-	self forceOne.
+	self consForce.
 	^ self == cdr and: nil == car.

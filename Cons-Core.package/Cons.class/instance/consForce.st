@@ -1,3 +1,4 @@
-syncing
+laziness
 consForce
-	^ self ifNotEmpty: [ :s | s peek cons: s step ]
+	"Forces only head pair. If not lazy, does nothing."
+	self subclassResponsibility.
