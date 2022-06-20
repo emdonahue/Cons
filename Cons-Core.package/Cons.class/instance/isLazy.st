@@ -1,3 +1,3 @@
-laziness
+testing
 isLazy
 	self subclassResponsibility.

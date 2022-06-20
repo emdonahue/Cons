@@ -1,3 +1,0 @@
-streaming
-reset
-	transducer reset

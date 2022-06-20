@@ -1,3 +1,3 @@
 laziness
 force
-	^ self consForce force
+	^ self consForce ifNotEmpty: [ :p | p cdr force ].

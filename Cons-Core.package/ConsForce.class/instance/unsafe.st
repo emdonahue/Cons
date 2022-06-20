@@ -1,3 +1,0 @@
-syncing
-unsafe
-	^ transducer

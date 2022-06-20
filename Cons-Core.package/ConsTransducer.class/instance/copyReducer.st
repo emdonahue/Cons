@@ -1,3 +1,0 @@
-streaming
-copyReducer
-	^ self copy
