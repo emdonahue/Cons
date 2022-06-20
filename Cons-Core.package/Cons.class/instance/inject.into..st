@@ -1,4 +1,4 @@
-eager
+element
 inject: initVal into: aBlock
 	| accum |
 	accum := initVal.

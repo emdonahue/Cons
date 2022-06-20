@@ -1,4 +1,4 @@
-eager
+element
 doWithIndex: twoBlock
 	| index |
 	index := 0.

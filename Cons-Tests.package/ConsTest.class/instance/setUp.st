@@ -1,15 +1,7 @@
 initialization
 setUp
-	four := (Cons
-		with: 1
-		with: 2
-		with: 3
-		with: 4) unsafe.
-	fourCopy := Cons
-		with: 1
-		with: 2
-		with: 3
-		with: 4.
+	four := Cons with: 1 with: 2 with: 3 with: 4.
+	fourCopy := Cons with: 1 with: 2 with: 3 with: 4.
 	one := Cons with: 1.
 	two := Cons with: 1 with: 2.
 	three := Cons with: 1 with: 2 with: 3.

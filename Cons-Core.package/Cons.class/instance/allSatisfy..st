@@ -1,4 +1,4 @@
-eager
+element
 allSatisfy: aBlock
 	self
 		do: [ :x | 

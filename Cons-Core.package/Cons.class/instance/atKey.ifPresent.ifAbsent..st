@@ -1,4 +1,4 @@
-eager
+element
 atKey: aKey ifPresent: presentBlock ifAbsent: absentBlock
 	self
 		do: [ :cons | 

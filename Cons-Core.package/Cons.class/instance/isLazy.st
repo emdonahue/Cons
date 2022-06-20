@@ -1,0 +1,3 @@
+laziness
+isLazy
+	self subclassResponsibility.

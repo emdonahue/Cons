@@ -1,4 +1,4 @@
-lazy
+list
 rejectOne: aBlock ifAbsent: absentBlock
 	^ ConsRemove new
 		transducer: self;

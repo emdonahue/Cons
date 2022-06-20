@@ -1,4 +1,4 @@
-eager
+element
 includes: anElement
 	self
 		do: [ :x | 

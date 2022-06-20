@@ -1,4 +1,4 @@
-eager
+element
 at: anIndex  ifPresent: presentBlock ifAbsent: absentBlock
 	self
 		inject: anIndex

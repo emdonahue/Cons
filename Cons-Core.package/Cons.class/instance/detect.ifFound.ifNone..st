@@ -1,4 +1,4 @@
-eager
+element
 detect: detectBlock ifFound: foundBlock ifNone: noneBlock
 	self
 		do: [ :x | 

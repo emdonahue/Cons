@@ -1,4 +1,4 @@
-eager
+element
 do: aBlock separatedBy: separatedBlock ifProper: properBlock ifNotProper: improperBlock
 	| tail |
 	tail := self do: aBlock separatedBy: separatedBlock.

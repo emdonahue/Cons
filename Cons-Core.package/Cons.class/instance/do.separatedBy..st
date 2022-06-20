@@ -1,4 +1,4 @@
-eager
+element
 do: doBlock separatedBy: separatedBlock
 	| beforeFirst |
 	beforeFirst := true.

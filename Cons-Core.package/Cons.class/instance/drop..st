@@ -1,4 +1,4 @@
-lazy
+list
 drop: aNumber
 	^ ConsDrop new
 		transducer: self;

@@ -1,3 +1,3 @@
-eager
+element
 tail
 	^ self linksDo: [ :x | ]

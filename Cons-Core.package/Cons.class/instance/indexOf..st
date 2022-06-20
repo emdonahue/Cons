@@ -1,4 +1,4 @@
-eager
+element
 indexOf: anElement
 	self
 		doWithIndex: [ :x :i | 

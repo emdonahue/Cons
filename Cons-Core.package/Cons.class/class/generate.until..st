@@ -1,3 +1,5 @@
 generating
 generate: aValuable until: atEnd
-	^ ConsForce new transducer: (ConsGenerator new valuable: aValuable; atEnd: atEnd)
+	^ self lazy: [ :p |
+			atEnd value ifTrue: [ p empty ]
+				ifFalse: [ p car: aValuable value; cdr: (self generate: aValuable until: atEnd) ]].

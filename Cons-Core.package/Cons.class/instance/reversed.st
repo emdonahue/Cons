@@ -1,3 +1,3 @@
-lazy
+list
 reversed
 	^ self reverse

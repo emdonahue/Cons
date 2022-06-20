@@ -1,4 +1,4 @@
-eager
+element
 linksDoWithIndex: aBlock
 	| i |
 	i := 0.

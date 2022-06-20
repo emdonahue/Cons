@@ -1,3 +1,4 @@
 accessing
 cdr
-	^ self step
+	self ifEmpty: [ CollectionIsEmpty signalWith: self ].
+	^ cdr.

@@ -1,4 +1,4 @@
-lazy
+list
 removeDuplicates
 	| duplicates |
 	duplicates := Set new.

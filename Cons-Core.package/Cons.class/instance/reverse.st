@@ -1,3 +1,3 @@
-lazy
+list
 reverse
 	^ ConsReverse new transducer: self

@@ -1,4 +1,4 @@
-eager
+element
 beginsWith: aPrefix
 	^ self
 		with: aPrefix
