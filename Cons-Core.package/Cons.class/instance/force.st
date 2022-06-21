@@ -1,3 +1,4 @@
 laziness
 force
-	^ self consForce ifNotEmpty: [ :p | p cdr force ].
+	self linksDo: [ :e | ].
+	^ self ifEmpty: Cons empty.

@@ -6,7 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"stream"
+		"car",
+		"cdr",
+		"block"
 	],
 	"name" : "ConsStream",
 	"type" : "normal"

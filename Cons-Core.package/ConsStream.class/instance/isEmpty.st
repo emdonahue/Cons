@@ -1,0 +1,3 @@
+laziness
+isEmpty
+	^ block isNil.

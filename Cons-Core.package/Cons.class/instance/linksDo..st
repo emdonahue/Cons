@@ -1,10 +1,15 @@
 linking
 linksDo: aBlock
-	"List passed to aBlock is guaranteed to be non-lazy for its first element, so #peek, #step and #atEnd can be used within this block."
-
-	| a |
-	a := self asReducer.
-	[ a consAtEnd ]
-		whileFalse: [ aBlock value: a.
-			a := a next ].
-	^ a
+	| list |
+	list := self.
+	[ list isCons ] whileTrue: [
+		list ifEmpty: [ ^ Cons empty ]
+			ifNotEmpty: [ 
+				aBlock value: list.
+				list := list cdr. ]
+	].
+	^ list. "Return tail if improper."
+	"self ifNotEmpty: [
+		aBlock value: self.
+		self cdr isCons ifTrue: [ self cdr linksDo: aBlock ]
+			ifFalse: [ aBlock value: self cdr ]]."

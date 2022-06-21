@@ -4,9 +4,12 @@ printOn: aStream
 	first := true.
 	aStream nextPut: $(.
 	self doLinks: [ :p | first ifFalse: [ aStream nextPut: Character space ]. 
-		p isCons ifTrue: [ p car printOn: aStream ] 
-			ifFalse: [ aStream nextPutAll: '. '. p printOn: aStream ]. 
-		first := false. ]
+			p car printOn: aStream.
+			first := false. ]
+		improper: [ :e | 
+			first ifFalse: [ aStream nextPut: Character space ].
+			aStream nextPutAll: '. '.
+			e printOn: aStream ]
 		lazy: [ 
 			first ifFalse: [ aStream nextPut: Character space ].
 			aStream nextPutAll: '...' ].

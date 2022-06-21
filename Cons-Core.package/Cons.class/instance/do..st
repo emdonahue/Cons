@@ -1,3 +1,3 @@
 element
 do: aBlock
-	^ self linksDo: [ :d | aBlock cull: d peek cull: d ]
+	^ self linksDo: [ :p | p isCons ifTrue: [ aBlock value: p car ]].

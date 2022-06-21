@@ -1,4 +1,0 @@
-streaming
-step
-
-	synced := false

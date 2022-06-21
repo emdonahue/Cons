@@ -1,4 +1,4 @@
 element
 reduce: aBlock
-	| a |
-	^ self ifEmpty: [ SubscriptOutOfBounds signal ] ifNotEmpty: [ :s | a :=  s peek. s step inject: a into: aBlock  ]
+	^ self ifEmpty: [ SubscriptOutOfBounds signal ] 
+		ifNotEmpty: [ self cdr inject: self car into: aBlock ]
