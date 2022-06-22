@@ -1,7 +1,7 @@
 linking
 linksDo: aBlock
 	| list |
-	list := self transducer.
+	list := ABBench a: [ self ] b: [ self transducer ].
 	[ list isCons ] whileTrue: [
 		list ifEmpty: [ ^ self class	 empty ]
 			ifNotEmpty: [ 
