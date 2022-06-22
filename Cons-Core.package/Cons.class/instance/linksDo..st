@@ -1,11 +1,11 @@
 linking
 linksDo: aBlock
 	| list |
-	list := self.
+	list := self transducer.
 	[ list isCons ] whileTrue: [
-		list ifEmpty: [ ^ Cons empty ]
+		list ifEmpty: [ ^ self class	 empty ]
 			ifNotEmpty: [ 
-				aBlock value: list.
+				aBlock value: list.	
 				list := list cdr. ]
 	].
 	^ list. "Return tail if improper."

@@ -1,3 +1,3 @@
-testing
-isEmpty
+laziness
+transducer
 	self subclassResponsibility.

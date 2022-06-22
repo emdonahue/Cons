@@ -1,3 +1,3 @@
 laziness
 transducer
-	^ ConsStream new cdr: car; block: cdr.
+	self isLazy ifTrue: [ ^ ConsTransducer new cdr: car transducer; block: cdr ].

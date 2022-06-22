@@ -10,6 +10,6 @@
 		"cdr",
 		"block"
 	],
-	"name" : "ConsStream",
+	"name" : "ConsTransducer",
 	"type" : "normal"
 }

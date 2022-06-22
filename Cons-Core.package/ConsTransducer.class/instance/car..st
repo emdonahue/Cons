@@ -1,4 +1,3 @@
 accessing
 car: anObject
-
-	car := anObject
+	car := anObject.
