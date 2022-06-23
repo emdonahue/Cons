@@ -1,4 +1,4 @@
-linking
+laziness
 linksDo: aBlock
 	| list |
 	list := ABBench a: [ self ] b: [ self transducer ].

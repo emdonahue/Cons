@@ -1,6 +1,5 @@
 tests-lazy
 testSelect
-	| selected |
 	self assert: (zero select: [ :x | true ]) equals: zero.
 	self assert: (four select: [ :x | true ]) equals: fourCopy.
 	self assert: (four select: [ :x | false ]) equals: zero.

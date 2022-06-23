@@ -1,4 +1,4 @@
 laziness
 isEmpty
 	self consForce.
-	^ block isNil.
+	^ block isNil & cdr isEmpty.

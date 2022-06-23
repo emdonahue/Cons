@@ -1,3 +1,2 @@
 laziness
 transducer
-	self subclassResponsibility.
