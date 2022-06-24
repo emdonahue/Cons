@@ -11,3 +11,5 @@ testTransducer
 	self assert: (three collect: [ :x | x ]) transducer cdr car equals: 2.
 	self assert: (three collect: [ :x | x ]) transducer cdr cdr car equals: 3.
 	self assert: (three collect: [ :x | x ]) transducer cdr cdr cdr isEmpty.
+	self assert: ((three collect: [ :x | x ]) do: [ :x | ]; yourself) unsafeCdr isBlock. "A lazy pair should produce a transducer and not force itself when enumerated."
+	self assert: ((three collect: [ :x | x ]) consForce do: [ :x | ]; yourself) unsafeCdr unsafeCdr isPair. "An eager pair should automatically force the rest when enumerated."

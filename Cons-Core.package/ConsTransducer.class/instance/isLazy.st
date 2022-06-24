@@ -1,3 +1,3 @@
-accessing
+laziness
 isLazy
 	^ self == car.

@@ -1,4 +1,4 @@
 laziness
 isEmpty
 	self consForce.
-	^ self == cdr and: nil == car.
+	^ self == cdr.
