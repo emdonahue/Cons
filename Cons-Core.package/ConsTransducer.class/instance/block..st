@@ -1,4 +1,3 @@
 accessing
 block: anObject
-
-	block := anObject
+	block := anObject.

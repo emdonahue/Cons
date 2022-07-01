@@ -1,0 +1,1 @@
+Identical to a lazy pair but lazily forces a cached list as it is expanded.
