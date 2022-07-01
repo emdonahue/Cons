@@ -1,11 +1,11 @@
 {
-	"commentStamp" : "EvanDonahue 7/1/2022 23:47",
-	"super" : "Cons",
+	"commentStamp" : "",
+	"super" : "ConsLazy",
 	"category" : "Cons-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "ConsEmpty",
+	"name" : "ConsForced",
 	"type" : "normal"
 }

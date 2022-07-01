@@ -1,3 +1,3 @@
 generating
 repeat: aValuable
-	^ self generate: [ aValuable ] to: [ false ].
+	^ self generate: [ aValuable ] from: aValuable.

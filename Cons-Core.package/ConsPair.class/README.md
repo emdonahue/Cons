@@ -1,0 +1,1 @@
+A cons pair with no special internal states that therefore contain a block in the cdr position.

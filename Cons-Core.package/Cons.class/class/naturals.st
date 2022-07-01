@@ -1,3 +1,3 @@
 generating
 naturals
-	^ [ :x | x + 1 ] asCons: 0.
+	^ [ :x | x + 1 ] asCons: 1.

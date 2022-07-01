@@ -1,3 +1,3 @@
 tests-eager
-testStream
+testFromStream
 	self assert: 'test' readStream asCons equals: 'test' asCons.

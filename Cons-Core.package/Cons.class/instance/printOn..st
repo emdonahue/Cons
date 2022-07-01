@@ -3,9 +3,9 @@ printOn: aStream
 	| first tail |
 	first := true.
 	aStream nextPut: $(.
-	tail := self linksDoLazy: 
+	tail := self doLazy: 
 		[ :p | first ifFalse: [ aStream nextPut: Character space ]. 
-			p car printOn: aStream.
+			p printOn: aStream.
 			first := false. ].
 	tail isCons
 		ifTrue: [ 

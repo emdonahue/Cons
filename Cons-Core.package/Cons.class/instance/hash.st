@@ -1,6 +1,7 @@
 comparing
 hash
-	| hash |
+	| hash tail |
 	hash := Cons hash.
-	self do: [ :x | hash := (hash + x hash) hashMultiply ] ifProper: [ ^ hash hashMultiply ] ifNotProper: [ :x | ^ (hash + x hash) hashMultiply  ].
-	^ hash.
+	tail := self do: [ :x | hash := (hash + x hash) hashMultiply ].
+	^ tail isCons ifTrue: [ hash hashMultiply ]
+		ifFalse: [ (hash + tail hash) hashMultiply  ].

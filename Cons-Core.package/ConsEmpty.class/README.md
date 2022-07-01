@@ -1,0 +1,1 @@
+A dedicated empty list that saves memory by using a singleton for all references.
