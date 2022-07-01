@@ -1,3 +1,3 @@
 *Cons-Core
 asCons
-	^ Cons repeat: self
+	^ Cons generate: self.

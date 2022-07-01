@@ -7,5 +7,4 @@ testNth
 	even := four nth: 2.
 	self assert: even car equals: 2.
 	self assert: even car equals: 2.
-	self reset.
 	self assert: (four nth: 2) equals: evens

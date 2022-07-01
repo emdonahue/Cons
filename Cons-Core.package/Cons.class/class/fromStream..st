@@ -1,3 +1,3 @@
 generating
 fromStream: aStream
-	^ ConsForce new transducer: (ConsTransducer new stream: aStream)
+	^ self generate: [ aStream next ] to: [ aStream atEnd ].

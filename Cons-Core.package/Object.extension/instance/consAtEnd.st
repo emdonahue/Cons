@@ -1,3 +1,0 @@
-*Cons-Core
-consAtEnd
-	^ true

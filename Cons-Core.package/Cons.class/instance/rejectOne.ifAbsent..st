@@ -1,6 +1,7 @@
 list
 rejectOne: aBlock ifAbsent: absentBlock
-	^ ConsRemove new
-		transducer: self;
-		block: aBlock;
-		absentBlock: absentBlock.
+	^ self lazy: [ :pair :list :block | 
+		list ifEmpty: [ pair empty. absentBlock value ]
+			ifNotEmpty: [ (aBlock value: list car) 
+				ifTrue: [ pair carcdr: list cdr ]
+				ifFalse: [ pair carcdr: list block: block ]]].

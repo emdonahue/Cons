@@ -1,0 +1,3 @@
+laziness
+isLazy
+	^ cdr isBlock.

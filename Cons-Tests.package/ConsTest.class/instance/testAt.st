@@ -8,9 +8,6 @@ testAt
 	self assert: (two at: 1) equals: 1.
 	self assert: (two at: 2) equals: 2.
 	self assert: (four at: 4) equals: 4.
-	self reset.
 	self should: [ (four select: [ :x | 1 < x ]) at: 4 ] raise: SubscriptOutOfBounds.
-		self reset.
 	self assert: ((four select: [ :x | 1 < x ]) at: 3) equals: 4.
-		self reset.
-	self assert: ((four collect: [ :x | x + 1 ]) at: 4) equals: 5
+	self assert: ((four collect: [ :x | x + 1 ]) at: 4) equals: 5.

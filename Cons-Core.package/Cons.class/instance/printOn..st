@@ -1,16 +1,18 @@
 printing
 printOn: aStream
-	| first |
+	| first tail |
 	first := true.
 	aStream nextPut: $(.
-	self doLinks: [ :p | first ifFalse: [ aStream nextPut: Character space ]. 
+	tail := self linksDoLazy: 
+		[ :p | first ifFalse: [ aStream nextPut: Character space ]. 
 			p car printOn: aStream.
-			first := false. ]
-		improper: [ :e | 
-			first ifFalse: [ aStream nextPut: Character space ].
+			first := false. ].
+	tail isCons
+		ifTrue: [ 
+			tail isLazy ifTrue: [
+			  first ifFalse: [ aStream nextPut: Character space ].
+				aStream nextPutAll: '...' ]]
+		ifFalse: [ first ifFalse: [ aStream nextPut: Character space ].
 			aStream nextPutAll: '. '.
-			e printOn: aStream ]
-		lazy: [ 
-			first ifFalse: [ aStream nextPut: Character space ].
-			aStream nextPutAll: '...' ].
+			tail printOn: aStream ].
 	aStream nextPut: $).

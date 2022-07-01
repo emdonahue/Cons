@@ -1,5 +1,3 @@
 generating
 naturals
-	| number |
-	number := 0.
-	^ [ number := number + 1 ] asCons
+	^ [ :x | x + 1 ] asCons: 0.

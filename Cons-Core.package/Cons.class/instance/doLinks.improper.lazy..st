@@ -4,5 +4,5 @@ doLinks: doBlock improper: impBlock lazy: lazyBlock
 	self ifNotEmpty: [ 
 		doBlock cull: self.
 		self cdr isCons 
-			ifTrue: [ self cdr doLinks: doBlock lazy: lazyBlock ]
+			ifTrue: [ self cdr doLinks: doBlock improper: impBlock lazy: lazyBlock ]
 			ifFalse: [ impBlock cull: self cdr ]].

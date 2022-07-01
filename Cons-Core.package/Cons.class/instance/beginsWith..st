@@ -1,9 +1,9 @@
 element
 beginsWith: aPrefix
-	^ self
-		with: aPrefix
-		do: [ :a :b | 
-			a = b
-				ifFalse: [ ^ false ] ]
-		ifProper: [ :a :b | b consAtEnd ]
-		ifNotProper: [ :a :b | b consAtEnd ]
+	| pfx |
+	pfx := aPrefix.
+	self do: [ :e | 
+		pfx ifEmpty: [ ^ true ].
+		e = pfx car ifTrue: [ pfx := pfx cdr ]
+			ifFalse: [ ^ false ]].
+	^ pfx isEmpty.

@@ -1,2 +1,0 @@
-*Cons-Core
-consForce

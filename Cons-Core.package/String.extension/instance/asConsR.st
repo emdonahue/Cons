@@ -1,2 +1,3 @@
 *Cons-Core
-consSync
+asConsR
+	

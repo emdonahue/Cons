@@ -1,4 +1,3 @@
-laziness
+testing
 isEmpty
-	self consForce.
-	^ self == cdr.
+	^ false.

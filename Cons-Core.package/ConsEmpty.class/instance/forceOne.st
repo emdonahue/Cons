@@ -1,2 +1,2 @@
 laziness
-consForce
+forceOne

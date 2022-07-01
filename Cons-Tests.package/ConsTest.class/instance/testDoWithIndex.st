@@ -9,10 +9,9 @@ testDoWithIndex
 			self assert: x equals: i.
 			state := state + x + i ].
 	self assert: state equals: 20.
-	self reset.
 	state := 0.
 	(four select: [ :x | 1 < x ])
 		doWithIndex: [ :x :i | 
 			self assert: x equals: i + 1.
 			state := state + x + i ].
-	self assert: state equals: 15
+	self assert: state equals: 15.

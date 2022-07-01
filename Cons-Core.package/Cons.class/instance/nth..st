@@ -1,3 +1,4 @@
 list
 nth: n
-	^ ConsNth new transducer: self; n: n
+	^ self lazy: [ :pair :list :block | 
+		pair carcdr: (list drop: n-1) block: block].

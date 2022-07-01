@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "EvanDonahue 6/24/2022 18:32",
+	"super" : "Cons",
+	"category" : "Cons-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"car",
+		"cdr"
+	],
+	"name" : "ConsLazy",
+	"type" : "normal"
+}
