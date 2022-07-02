@@ -1,3 +1,3 @@
 accessing
 cdr: anObject
-	cdr := anObject
+	cdr := anObject.

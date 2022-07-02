@@ -1,3 +1,6 @@
 laziness
 transducer
-	self isLazy ifTrue: [ ^ ConsTransducer new cdr: car transducer; block: cdr ].
+	self isLazy ifTrue: [ 
+		^ ConsTransducer new cdr: 
+			(self isGenerator ifTrue: car ifFalse: [ car transducer ]); 
+			block: cdr ].
