@@ -1,5 +1,5 @@
 # Cons
-A Lisp-style lazy cons list. Can handle Smalltalk streams and infinite generators (blocks) as though they were lists. Uses transducers to avoid intermediate representations for speed. All list operations return lazy lists. All non-list operations return values immeditaely.
+A Lisp-style lazy cons list. Can handle Smalltalk streams and infinite generators (blocks) as though they were lists. Non lazy operations avoid building intermediate lists unless specified, so can be used safely on large or infinite lists. All list operations return lazy lists. All non-list operations return values immeditaely.
 
 ### Instance Creation:
 ```
@@ -11,8 +11,10 @@ Cons with: 1 with: 2.           "(1 2)"
 2 cons add: 1.                  "(1 2)"
 #(1 2 3) asCons.                "(1 2 3)"
 #(1 2 3) readStream asCons.     "(...)"
-x := 0. [ x := x + 1 ] asCons.  "(...)"
-x := 0. Cons generate: [ x := x + 1 ] until: [ x = 4 ]. "(...)"
+[ 5 ] asCons                    "(...)" Infinite list of 5's.
+[ :x | x + 1 ] asCons: 1.       "(...)" Natural numbers.
+Cons generate: [ :x | x + 1 ] from: [ 0 ] to: [ :x | x = 10 ]. "(...)" Numbers 0-10.
+Cons generate: [ :x | x + 1 ] from: [ 0 ] upTo: [ :x | x = 10 ]. "(...)" Numbers 0-9.
 ```
 
 ### List Operations (Lazy) (normal Smalltalk syntax):
@@ -27,18 +29,18 @@ The full set of lazy operations can be found in the *lazy* protocol.
 ```
 The full set of eager operations can be found in the *eager* protocol.
 
-### Unsafe Operations
-Although Cons avoids building intermediate lists when possible, it does, by default, build a list to cache the values produced by a *aStream asCons* or *aBlock asCons*. This is so that calling, for instance, #second on the list always returns the same value, even as the underlying stream mutates. To override this behavior and use Cons as a purely stateless iterator over a stream or other generator, use the #unsafe method as below. This will change the behavior of all lists that depend on the stream or generator.
+### Forcing functions
+Because intermediate lists are not built by default, lists generated from underlying stateful processes, such as a stream, may be unsafe if referenced repeatedly. The *force* family of functions builds immutable lists that can safely be referenced multiple times. 
+
 ```
-myStream asCons unsafe do: [...].
+(Cons naturals take: 3) force.     "(1 2 3)"
+(Cons naturals take: 3) forced.     "(...)" Lazily builds the concrete list as needed.
 ```
 
 ### Installation
-Use World Menu > Tools > Catalog Browser and search for "Cons," or use the following Metacello script:
 ```
 Metacello new
-smalltalkhubUser: 'Pharo' project: 'MetaRepoForPharo60'; 
-configuration: 'Cons';
-version: #stable;
-load.
+	baseline: 'Cons';
+	repository: 'github://emdonahue/Cons';
+	load.
 ```
