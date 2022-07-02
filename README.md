@@ -21,15 +21,15 @@ Cons generate: [ :x | x + 1 ] from: [ 0 ] upTo: [ :x | x = 10 ]. "(...)" Numbers
 ```
 (1 cons: 2 cons) select: [ :x | x < 2 ].  "(...)"
 ```
-The full set of lazy operations can be found in the *lazy* protocol.
+The full set of lazy operations can be found in the *lazy* protocol. To extend with new operations, use ```self lazy: [ :next :prev :block | ... ]```, where next is the pair representing the suspended list to be filled with the next values, prev is the current list from which the next list is derived, and block is the block used to facilitate the transformation. Within this block, use methods from the laziness protocol on next, such as 'next empty,' 'next car: a cdr: d,' 'next carcdr: ad,' and 'next car: a cdr: d block: block.'
 
 ### Non-List Operations (Eager) (normal Smalltalk syntax):
 ```
 (1 cons: 2 cons) inject: 0 into: [ :x :y | x + y ].  "3"
 ```
-The full set of eager operations can be found in the *eager* protocol.
+The full set of eager operations can be found in the *eager* protocol. To extend with new operations, in most cases, use `#linksDo:` for an optimized eager walk through the list, or another method derived from it. Similar to do: but passes in the actual list cells.
 
-### Forcing functions
+### Forcing Functions
 Because intermediate lists are not built by default, lists generated from underlying stateful processes, such as a stream, may be unsafe if referenced repeatedly. The *force* family of functions builds immutable lists that can safely be referenced multiple times. 
 
 ```
