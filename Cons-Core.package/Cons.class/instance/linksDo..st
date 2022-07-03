@@ -7,5 +7,5 @@ linksDo: aBlock
 		list ifEmpty: [ ^ self class empty ]
 			ifNotEmpty: [ 
 				aBlock value: list.	
-				list := list cdr.]]. "Don't transduce cdr so if head is a pair we reify the whole list. Gives us some flexibility about transducing vs reifying the list to memoize values."
+				list := list cdr.]].
 	^ list. "Return tail if improper."

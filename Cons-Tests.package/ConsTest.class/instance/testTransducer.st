@@ -15,3 +15,4 @@ testTransducer
 	self assert: ((three collect: [ :x | x ]) forceOne do: [ :x | ]; yourself) unsafeCdr unsafeCdr isBlock. "An eager pair should still allow a lazy tail to remain unforced."
 	self assert: ((three collect: [ :x | x ]) forced do: [ :x | ]; yourself) unsafeCdr unsafeCdr isPair. "A forced pair forces as it goes."
 	self assert: (1 cons: []) cdr isBlock. "Ensure that internal representation blocks are separate from external blocks."
+		self assert: (((four collect: [:x|x]) forceOne collect: [:x|x]) sum; yourself) unsafeCar unsafeCdr isLazy.
