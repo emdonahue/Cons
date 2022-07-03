@@ -1,0 +1,3 @@
+list
+sorted
+	^ self sort.
