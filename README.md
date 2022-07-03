@@ -27,7 +27,7 @@ The full set of lazy operations can be found in the *lazy* protocol. To extend w
 ```
 (1 cons: 2 cons) inject: 0 into: [ :x :y | x + y ].  "3"
 ```
-The full set of eager operations can be found in the *eager* protocol. To extend with new operations, in most cases, use `#linksDo:` for an optimized eager walk through the list, or another method derived from it. Similar to do: but passes in the actual list cells.
+The full set of eager operations can be found in the *element* protocol. To extend with new operations, in most cases, use `#linksDo:` for an optimized eager walk through the list, or another method derived from it. Similar to do: but passes in the actual list cells.
 
 ### Forcing Functions
 Because intermediate lists are not built by default, lists generated from underlying stateful processes, such as a stream, may be unsafe if referenced repeatedly. The *force* family of functions builds immutable lists that can safely be referenced multiple times. 
