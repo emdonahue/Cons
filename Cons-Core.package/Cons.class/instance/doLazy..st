@@ -1,4 +1,4 @@
-element
+laziness
 doLazy: aBlock
 	self isLazy ifTrue: [ ^ self ].
 	^ self ifNotEmpty: [ 
