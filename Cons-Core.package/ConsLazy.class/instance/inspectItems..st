@@ -2,7 +2,7 @@ inspecting
 inspectItems: aBuilder
 	<inspectorPresentationOrder: 1 title: 'Items'>
 	| items list button |
-	items := list := button := nil.
+	items := list := button := Object new.
 	items := OrderedCollection new.
 	self do: [ :x | items add: x ]
 		lazy: [ items add: (button := aBuilder newButton
